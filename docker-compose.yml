@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  projetoapidocker:
+    image: ${DOCKER_REGISTRY-}projetoapidocker
+    build:
+      context: .
+      dockerfile: ProjetoAPIDocker/Dockerfile
